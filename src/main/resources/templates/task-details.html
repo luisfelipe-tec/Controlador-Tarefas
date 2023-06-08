@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Details</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Title: [[${task.titulo}]]</h5>
+                <p class="card-text">Descrição: [[${task.descricao}]]</p>
+                <p class="card-text">Data de Criação: [[${task.dataDeCriacao}]]</p>
+                <a href="/tasks" class="card-link">Voltar às Tarefas</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
