@@ -9,15 +9,15 @@
 </head>
 <body>
 	<div class="container mt-4">
-		<h1 class="mb-4">Task List</h1>
+		<h1 class="mb-4">Lista de Tarefas</h1>
 		<table class="table">
 			<thead>
 				<tr>
 					<th>ID</th>
-					<th>Title</th>
-					<th>Description</th>
-					<th>Creation Date</th>
-					<th>Actions</th>
+					<th>Título</th>
+					<th>Descrição</th>
+					<th>Data de Criação</th>
+					<th>Ações</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -27,17 +27,17 @@
 					<td th:text="${task.getDescricao()}"></td>
 					<td th:text="${task.getDataDeCriacao()}"></td>
 					<td><a class="btn btn-primary btn-sm"
-						th:href="@{/tasks/{id}(id=${task.getId()})}">View</a> <a
+						th:href="@{/tasks/{id}(id=${task.getId()})}">Visualizar</a> <a
 						class="btn btn-secondary btn-sm"
-						th:href="@{/tasks/{id}/edit(id=${task.getId()})}">Edit</a>
+						th:href="@{/tasks/{id}/edit(id=${task.getId()})}">Editar</a>
 						<form th:action="@{/tasks/{id}/delete(id=${task.getId()})}"
 							method="post" style="display: inline;">
-							<button class="btn btn-danger btn-sm" type="submit">Delete</button>
+							<button class="btn btn-danger btn-sm" type="submit">Excluir</button>
 						</form></td>
 				</tr>
 			</tbody>
 		</table>
-		<a class="btn btn-success" href="/tasks/create">Create New Task</a>
+		<a class="btn btn-success" href="/tasks/create">Criar nova tarefa</a>
 	</div>
 </body>
 </html>
